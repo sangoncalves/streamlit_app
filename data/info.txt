@@ -1,0 +1,20 @@
+data source = https://transparencia.registrocivil.org.br/dados-covid-download
+
+2019: Período: 01/01/2019 até 31/12/2019. Arquivo atualizado em: 18/03/2021 às 14:50
+
+2020: Período: 01/01/2020 até 31/12/2020. Arquivo atualizado em: 18/03/2021 às 14:50
+
+2021: Período: 01/01/2021 até 19/03/2021. Arquivo atualizado em: 18/03/2021 às 14:50
+
+Format: CSV
+
+More info from the website:
+Esses arquivos serão atualizados uma única vez ao dia, o que poderá causar discrepâncias quando comparados com os dados apresentados em nossos painéis.
+
+Os arquivos possuem a mesma estrutura dos gráficos apresentados na seção “Painel Registral” com as seguintes colunas:
+
+UF
+Tipo de doença
+Local de óbito
+Faixa etária
+Sexo
