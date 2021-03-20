@@ -29,9 +29,9 @@ def comparing_graph(df_2019,df_2020,df_2021,causa,state="BRASIL"):
 
 def main():
     #Variables
-    deaths_2019 = load_data("data/raw/obitos-2019_Período_01012019_até_31122019.csv")
-    deaths_2020 = load_data("data/raw/obitos-2020_Período_01012020_até_31122020.csv")
-    deaths_2021 = load_data("data/raw/obitos-2021_Período_01012021_até_19032021.csv")
+    deaths_2019 = load_data("data/raw/obitos-2019_Periodo_01012019_ate_31122019.csv")
+    deaths_2020 = load_data("data/raw/obitos-2020_Periodo_01012020_ate_31122020.csv")
+    deaths_2021 = load_data("data/raw/obitos-2021_Periodo_01012021_ate_19032021.csv")
     image = comparing_graph(deaths_2019,deaths_2020,deaths_2021,"SRAG")
     
     st.title("My first application")
