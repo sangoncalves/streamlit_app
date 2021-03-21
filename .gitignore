@@ -133,3 +133,10 @@ dmypy.json
 
 # venv
 venv_streamlit/
+
+# txt
+challenges.txt/
+code_try_later.txt/
+
+#markdown
+.mkd/

@@ -1,0 +1,63 @@
+#https://stackoverflow.com/questions/19124601/pretty-print-an-entire-pandas-series-dataframe
+
+#df_2019
+#print(df_2019.to_string()) didn't work
+
+#st.text("My app!")
+
+#Presenting Data
+#st.dataframe(df_2019)
+
+#NOT WORKING!!!!
+def comparing_graph(causa="empty",state="BRASIL"):
+    if (state == "BRASIL" and causa != "empty"):
+        total_deaths_2019 = df_2019.groupby(["uf","tipo_doenca"]).sum()
+        total_deaths_2020 = df_2020.groupby(["uf","tipo_doenca"]).sum()
+        total_deaths_2021 = df_2021.groupby(["uf","tipo_doenca"]).sum()
+        lista = [int(total_deaths_2019.loc[causa]),int(total_deaths_2020.loc[causa])]
+        data = pd.DataFrame({"Total" : lista,
+                             "Year"  : [2019,2020]})
+        plt.figure(figsize=(8,6))
+        sns.barplot(x = "tipo_doenca", y = "Total", data = data)
+
+    elif (causa=="empty" and state == "BRASIL"):
+        total_deaths_2019 = df_2019.groupby(("tipo_doenca")).sum()
+        total_deaths_2020 = df_2020.groupby(("tipo_doenca")).sum()
+        total_deaths_2021 = df_2021.groupby(("tipo_doenca")).sum()
+        y_2019 = df_2019.tipo_doenca.values
+        y_2020 = df_2020.tipo_doenca.values
+        lista = [int(total_deaths_2019.query("uf = state")),int(total_deaths_2020.query("uf = state"))]
+        data = pd.DataFrame({"Total" : lista,
+                             "Year"  : [2019,2020]})
+        plt.figure(figsize=(8,6))
+        sns.barplot(x = "Total", y = [y_2019,y_2020], data = data)
+
+    elif (causa=="empty" and state != "BRASIL"):
+        total_deaths_2019 = df_2019.groupby(["uf","tipo_doenca"]).sum()
+        total_deaths_2020 = df_2020.groupby(["uf","tipo_doenca"]).sum()
+        total_deaths_2021 = df_2021.groupby(["uf","tipo_doenca"]).sum()
+        y_2019 = df_2019.tipo_doenca.values
+        y_2020 = df_2020.tipo_doenca.values
+        lista = [int(total_deaths_2019.query("uf = state")),int(total_deaths_2020.query("uf = state"))]
+        data = pd.DataFrame({"Total" : lista,
+                             "Year"  : [2019,2020]})
+        plt.figure(figsize=(8,6))
+        sns.barplot(x = "Total", y = [y_2019,y_2020], data = data)
+
+    else:
+        total_deaths_2019 = df_2019.groupby(["uf","tipo_doenca"]).sum()
+        total_deaths_2020 = df_2020.groupby(["uf","tipo_doenca"]).sum()
+        total_deaths_2021 = df_2021.groupby(["uf","tipo_doenca"]).sum()
+        lista = [int(total_deaths_2019.loc[state,causa]),int(total_deaths_2020.loc[state,causa])]
+
+        data = pd.DataFrame({"Total" : lista,
+                             "Year"  : [2019,2020]})
+        plt.figure(figsize=(8,6))
+        sns.barplot(x = "tipo_doenca", y = "Total", data = data)
+    #plt.title(f"Deaths by {causa} - {state}")
+    #plt.legend(data.Year)
+    plt.show()
+
+# comparing_graph("SRAG","SP")
+# comparing_graph()
+#comparing_graph(state="SP")

@@ -1,0 +1,8 @@
+### Create the virtual environment
+python3 -m venv nome_do_ambiente_virtual
+
+### Activate the virtual environment:
+nome_do_ambiente_virtual\Scripts\Activate
+
+### Run streamlit
+streamlit run "name_of_the_app"

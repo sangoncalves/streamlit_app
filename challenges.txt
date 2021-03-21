@@ -1,0 +1,16 @@
+### Challenges
+Desafio 01 - Acesse o portal da transparência e leia sobre como são feitas as classificações por tipo de óbito e como são obtidos os dados. 
+
+Desafio 02 - Nesta aula o Thiago quer fazer uma contagem dos números de casos, mas os dados não parecem corretos. Identifique o problema antes de seguir para o próximo vídeo e ajude a corrigir
+
+Desafio 03 - Nesta análise trabalhamos apenas com a informação de óbito, agora queremos que você explore as outras informações da base de dados para enriquecer mais sua aplicação final. Veja o que descobre de interessante e compartilhe no Discord
+
+Desafio 04 - Que tal deixar a função que criamos para gerar os gráficos ainda melhor, acrescente um filtro para pode selecionar o estado que gostaria de visualizar
+
+Desafio 05 - Como você sabe neste curso vamos aprender como criar uma aplicação web para ciência de dados com o Streamlit, que é uma ferramenta de alto nível abstraindo muitas coisas. Entender, mesmo que superficialmente, como uma aplicação-web funciona é interessante para você conhecer o que está acontecendo por baixo dos panos do Streamlit, por isso queremos que você pesquise um pouco sobre como funciona o Web. Neste vídeo o Sérgio Lopes, CTO da Alura faz uma explicação geral de como as coisas acontecem em uma aplicação.
+
+Desafio 06 - A função que melhoramos no vídeo 2.3 da para ficar ainda melhor, agora queremos que você acrescente a opção de selecionar apenas o estado e visualizar os totais de óbitos.
+
+Desafio 07 - Nesta aula criamos nossa primeira aplicação com o Streamlit e nosso desafio é que você explore a documentação da ferramenta, entre nos códigos fontes (github) dos exemplos, explore os métodos e afins.
+
+Desafio 08 - Na aula passada pedimos para você explorar a documentação, agora queremos que dê uma olhada nos chamados comandos mágicos do streamlit, como funciona e compartilhe conosco as vantagens e desvantagens que você identificou. Desafio extra - Não deixe de ir reproduzindo o código que estamos desenvolvendo na aula para você exercitar e realizar os testes dessa nova ferramenta.
