@@ -61,8 +61,8 @@ def main():
     list_key_dis_PT = list(dis_eng.keys())
     list_val_dis_EN = list(dis_eng.values())
 
-    st.title("My first application")
-    st.markdown("This project analyse the data related to deaths on Brazil in the period from 2019 to 2021")
+    st.title("Graph - Comparison of deaths on period 2019-2020 (Brazil)")
+    st.markdown("This project analyse the data related to deaths on Brazil in the period from 2019 to 2021.")
     
     option_disease = st.selectbox("Select disease type:",list_val_dis_EN)
     option_disease_position = list_val_dis_EN.index(option_disease)
@@ -74,6 +74,8 @@ def main():
     image = comparing_graph(deaths_2019,deaths_2020,deaths_2021,
                             option_disease_selected,option_state)
     st.pyplot(image)
+
+    st.write("source: https://transparencia.registrocivil.org.br/dados-covid-download")
 
 
 if __name__ == "__main__":
